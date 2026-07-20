@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fictional-reuse-001",
+    "context": "A moonflower is a flowering plant observed in the imaginary Aurora Garden ontology.",
+    "initial-primitive-ontology-triples": [
+      ["Moonflower", "is-a", "Flowering plant"]
+    ],
+    "extended-primitive-ontology-triples": [
+      ["Moonflower", "is defined by", "A fictional flowering plant in Aurora Garden"]
+    ]
+  }
+]

@@ -1,0 +1,55 @@
+# Python caches and environments
+__pycache__/
+*.py[cod]
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+
+# Credentials and local configuration
+.env
+.env.*
+*.key
+*.pem
+credentials*
+secrets*
+
+# Challenge data and generated datasets
+data/
+datasets/
+**/train_task_a.json
+**/train_task_b.json
+**/test_task_a_input.json
+*.jsonl
+
+# Models and adapters
+models/
+checkpoints/
+adapter/
+adapters/
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+
+# Predictions, logs, reports, and run directories
+runs/
+outputs/
+predictions/
+logs/
+task_a_predictions.json
+inference_log.json
+validation.json
+training_summary.json
+run_summary.json
+*.log
+
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

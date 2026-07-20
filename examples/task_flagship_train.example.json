@@ -1,0 +1,9 @@
+[
+  {
+    "id": "fictional-train-001",
+    "context": "A silver comet is a celestial object composed of ice and dust.",
+    "primitive-ontology-triples": [
+      ["Silver comet", "is-a", "Celestial object"]
+    ]
+  }
+]
