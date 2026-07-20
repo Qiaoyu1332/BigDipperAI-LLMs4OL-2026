@@ -60,11 +60,11 @@ These identifiers establish provenance but the corresponding large or restricted
 
 | Artifact | SHA256 |
 |---|---|
-| Training configuration | `d3b0849d5d5c29afd057bd145d3dd578cb75a3c68ff21fcf7ffc6c05b518ecde` |
+| Training configuration | `d3b0849d1baa6c25d6aee451370bcba014fb2bdf6024154e82f351fb338dc535` |
 | Adapter weights | `626efdea6553e0d337936c9ef790822806e9cbeb355bea2e4cd51c247d9c2269` |
-| Adapter configuration | `35930ca10f0d2cbb21b06576c05e2632abfca630875c43ef847a9db7a49a8d2e` |
+| Adapter configuration | `35930ca471daf0bf907cbec5a889b080178bb38aec653276c9f4593fba776a84` |
 | Final submission JSON | `50d2d452f7bd460494f298a17a47ec95a38f2ecd364090712399ba68c82eef96` |
-| Submission manifest | `1197508f778c419f3c09394b1a08c93e42129b18015ef002b747442efea828c6` |
+| Submission manifest | `1197508f6d70195a7adb1a0ff2b79fd7897957c610b6421d03f22700818e0411` |
 
 ## Official evaluator
 
