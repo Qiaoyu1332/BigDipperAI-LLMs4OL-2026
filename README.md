@@ -3,11 +3,11 @@
 [![Unit tests](https://github.com/Qiaoyu1332/BigDipperAI-LLMs4OL-2026/actions/workflows/unit-tests.yml/badge.svg)](https://github.com/Qiaoyu1332/BigDipperAI-LLMs4OL-2026/actions/workflows/unit-tests.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-BigDipperAI is a reproducible system for structured ontology generation in the [LLMs4OL 2026 Task Flagship](https://sites.google.com/view/llms4ol2026/flagship-task). It maps a test item containing an `id` and natural-language `context` to a JSON list of `primitive-ontology-triples`, with each triple represented as `[subject, relation, object]`.
+This repository contains the code for the BigDipperAI team's submission to the [LLMs4OL 2026 Task Flagship](https://sites.google.com/view/llms4ol2026/flagship-task). The submitted approach maps a test item containing an `id` and natural-language `context` to a JSON list of `primitive-ontology-triples`, with each triple represented as `[subject, relation, object]`.
 
-This repository contains the training, inference, post-processing, and validation programs used by the submitted system. It does not contain challenge data, model weights, trained adapters, prediction files, organizer reference answers, or evaluation results.
+The repository provides the training, inference, post-processing, and validation programs used for the submission. It does not contain challenge data, model weights, trained adapters, prediction files, organizer reference answers, or evaluation results.
 
-## System overview
+## Submission overview
 
 ```mermaid
 flowchart LR
@@ -33,7 +33,7 @@ The pipeline has five connected parts:
 4. **Repair and graph-aware post-processing.** The parser recovers admissible triples from structured text, performs a bounded retry when required, and combines model candidates with context-gated self-edge candidates derived from training data.
 5. **Submission validation.** The final payload is checked for schema, identifier coverage and order, duplicate identifiers, triple shape, string types, and relation-vocabulary membership.
 
-These stages enforce a reproducible data and submission contract. Structural validation does not determine whether a predicted ontology edge is semantically correct.
+Together, these stages define the data, training, inference, and validation flow used for the submission.
 
 ## Training configuration
 
@@ -159,7 +159,7 @@ The tests cover prompt construction, Task B conversion, relation-aware sample we
 - `ontology_pipeline.py`: prompt, relation vocabulary, parsing, entity checks, graph completion, fusion, and submission validation.
 - `unittest.py`: unit tests that do not download a base model.
 - `requirements.txt`: pinned direct Python dependencies.
-- `docs/reproducibility.md`: environment, run-boundary, version, and artifact provenance.
+- `docs/reproducibility.md`: detailed environment, dependency, and run information.
 - `examples/`: fictional JSON schema examples.
 
 ## Data, models, and evaluation
@@ -169,7 +169,7 @@ The tests cover prompt construction, Task B conversion, relation-aware sample we
 - Released evaluator: [LLMs4OL Challenge 2026 metrics](https://github.com/sciknoworg/LLMs4OL-Challenge/tree/main/2026/metrics)
 - Base model: [Qwen/Qwen3-8B](https://huggingface.co/Qwen/Qwen3-8B)
 
-Users must obtain the challenge data and base model from their official sources and comply with the corresponding licenses and access terms. The organizers hold the reference outputs required to compute the official results. The accompanying system paper is being prepared; organizer-released results are pending.
+Users must obtain the challenge data and base model from their official sources and comply with the corresponding licenses and access terms. The organizers hold the reference outputs required to compute the official results. The accompanying participant paper is being prepared; organizer-released results are pending.
 
 ## License
 
