@@ -169,7 +169,7 @@ The tests cover prompt construction, Task B conversion, relation-aware sample we
 - Released evaluator: [LLMs4OL Challenge 2026 metrics](https://github.com/sciknoworg/LLMs4OL-Challenge/tree/main/2026/metrics)
 - Base model: [Qwen/Qwen3-8B](https://huggingface.co/Qwen/Qwen3-8B)
 
-Users must obtain the challenge data and base model from their official sources and comply with the corresponding licenses and access terms. The organizers hold the reference outputs required to compute the official results. The accompanying participant paper is being prepared; organizer-released results are pending.
+Users must obtain the challenge data and base model from their official sources and comply with the corresponding licenses and access terms. The organizers hold the reference outputs required to compute the official results. Organizer-issued metrics for the submitted approach have been received, while the official leaderboard has not yet been released.
 
 ## License
 
